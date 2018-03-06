@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+html,body {
+    height:297mm;
+    width:210mm;
+}
+.container {
+    margin: 2.5% 5% 2.5% 2.5%;
+    display: flex;
+}
+.left-side {
+    width: 15%;
+    height: 294.5mm;
+    background-color: #D7D6D5;
+    position: relative;
+}
+.main {
+    padding-left: 2%;
+    width: 90%;
+}
+header {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+header:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.header_left-side {
+    float: left;
+    padding-left: 5%;
+}
+h1 {
+    color: #5F5F5F;
+    font-size: 32px;
+}
+h3 {
+    color: #8FC95F;
+    font-size: 24px;
+}
+.links-info {
+    float: right;
+    margin-right: 125px;
+}
+ul.links {
+    list-style: none;
+}
+ul.links > li {
+    background-color: #8FC95F;
+	width:14px;
+	height:14px;
+    margin:4px 4px 0 0;
+    border-radius: 50%;
+    position: relative;
+}
+ul.links > li + li {
+    margin-top: 5px;
+}
+ul.links > li > i {
+    color: #fff;
+    position: absolute;
+
+}
+ul.links > li:nth-child(1) i{
+    font-size: 9px;
+    top: 2px;
+    left: 4px;
+}
+ul.links > li:nth-child(2) i{
+    font-size: 12px;
+    top: 2px;
+    left: 2px;
+}
+ul.links > li:nth-child(3) i {
+    font-size: 11px;
+    top: 1px;
+    left: 4px;
+}
+ul.links > li:nth-child(4) i,
+ul.links > li:nth-child(5) i {
+    font-size: 8px;
+    top: 3px;
+    left: 3px;
+}
+ul.links > li:after {
+	margin:4px 4px 0 0;
+	overflow:hidden;
+    position: absolute;
+    top: -8px;
+    left: 19px;
+    font-size: 14px;
+    color: #5F5F5F;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ul.links > li:nth-child(1):after {
+	content:"in/iberezhnyi";
+}
+ul.links > li:nth-child(2):after {
+	content:"Werstern";
+}
+ul.links > li:nth-child(3):after {
+	content:"Berezhnyi.Ihor";
+}
+ul.links > li:nth-child(4):after {
+	content:"werstern@bigmir.net";
+}
+ul.links > li:nth-child(5):after {
+	content:"wersternn@gmail.com";
+}
+section.employment{
+    margin-bottom: 7%;
+    padding-left: 20%;
+}
+section.contacts {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+section.education-info{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 7%;
+    margin-left: 5%;
+    border-left: 1.5px solid #8FC95F;
+    display: flex;
+    justify-content: space-between;
+}
+.education, .skills {
+    width: 40%;
+}
+.skills {
+    width: 59%;
+}
+.skills {
+    position: relative;
+    border-left: 1.5px solid #8FC95F;
+    padding-left: 7%;
+}
+.employment{
+    position: relative;
+    border-left: 1.5px solid #8FC95F;
+    margin-left: 5%;
+}
+.icon-employment-section, .icon-education-section{
+    position: absolute;
+    top: 0;
+    left: -13px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #8FC95F;
+}
+.icon-employment-section > i {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 4px;
+    margin-top: 5px;
+    z-index: 2;
+}
+.icon-education-section > i {
+    font-size: 16px;
+    color: #fff;
+    /* margin-left: 5px;
+    margin-top: 3px; */
+    margin-left: 2px;
+    margin-top: 4px;
+    z-index: 2;
+}
+
+.employment_place {
+    padding-bottom: 3%;
+}
+.employment-info{
+    position: relative;
+    padding-bottom: 10px;
+}
+.employment-info:before {
+    width: 45px;
+    position: absolute;
+    top: 0;
+    left: -18%;
+    color: #616161;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.antonov:before {
+    content:'Present 09. 2015';
+}
+.independent:before {
+    content:'Present 07. 2016';
+}
+.employment_place__title {
+    color: #C7C7C7;
+    font-size: 11px;
+}
+.activity-name {
+    color: #8FC95F;
+    font-size: 12px;
+    padding-right: 2.5%;
+    font-weight: bold;
+}
+.activity-position {
+    font-size: 14px;
+    color: #616161;
+    padding-top: 1.5%;
+    padding-bottom: 0.75%;
+    font-weight: bold;
+}
+ul.activity-description {
+    list-style: none;
+    padding-left: 5px;
+    color: #808080;
+    font-size: 12px;
+}
+ul.activity-description li:before {
+    content:  "\2043";
+    position: relative;
+    left: -5px;
+    color: #808080;
+}
+ul.activity-description li + li {
+    margin-top: 4px;
+}
+.university {
+    font-size: 12px;
+    color: #8FC95F;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+.education_location {
+    font-size: 11px;
+    color: #C7C7C7;
+    padding-bottom: 4px;
+}
+.education_description {
+    font-size: 12px;
+    color: #808080;
+    padding-bottom: 4px;
+}
+.boled {
+    font-weight: 700;
+}
+.skills-tree {
+    list-style: none;
+}
+.skills-tree > li {
+    font-size: 12px;
+    color: #808080;
+    font-weight: 700;
+}
+.skills-tree_position {
+    display: flex;
+    justify-content: space-between;
+}
+.skills-tree_position .skill-name {
+    width: 45%;
+}
+.skills-tree_position .assessment {
+    width: 50%;
+}
+.assessment ul > li {
+    display: inline-block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #B5B2B2;
+}
+.assessment ul > li.bgColor-green {
+    background-color: #8FC95F;
+}
+.assessment ul > li + li {
+    margin-left: 5px;
+}
+.assessment ul > li i {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 14px;
+    color: #fff;
+}
+.skills-tree > li + li {
+    padding-top: 10px;
+}
+.main-contacts {
+    width: 46%;
+}
+.main-contacts ul > li {
+    font-size: 14px;
+    color: #808080;
+    list-style: none;
+}
+.main-contacts ul > li + li {
+    padding-top: 2px;
+}
+.contact-container {
+    display: flex;
+}
+.contact-icon{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #777B7E;
+    position: relative;
+}
+.contact-icon > i {
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+}
+.main-contacts ul > li:nth-child(1) .contact-container .contact-icon i {
+    top: 2px;
+    left: 4px;
+}
+.main-contacts ul > li:nth-child(2) .contact-container .contact-icon i {
+    top: 1px;
+    left: 3px;
+}
+.main-contacts ul > li:nth-child(3) .contact-container .contact-icon i {
+    top: 1px;
+    left: 3px;
+}
+.main-contacts ul > li:nth-child(4) .contact-container .contact-icon i {
+    top: 2px;
+    left: 3px;
+}
+.contact-container > div + p{
+    margin-left: 10px;
+}
+#introduce{
+    transform: rotate(-90deg);
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 120px;
+    text-transform: uppercase;
+}
+#colorGray{
+    color: #5D5D5D;
+    margin-left: -40px;
+}
+#employment{
+    transform: rotate(-90deg);
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 230px;
+    left: 10px;
+    text-transform: uppercase;
+}
+#education{
+    transform: rotate(-90deg);
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 530px;
+    left: 10px;
+    text-transform: uppercase;
+}
+#colorFont{
+    color: #5D5D5D;
+    margin-left: 47px;
+}
+#contacts{
+    transform: rotate(-90deg);
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 965px;
+    left: 27px;
+    text-transform: uppercase;
+}
+.githhub-info {
+    position: relative;
+    width: 55%;
+    padding-left: 7%;
+    border-left: 1.5px solid #B5B2B2;
+}
+section.education-info + section.contacts {
+    padding-top: 10%;
+}
+.github-logo-footer {
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #B5B2B2;
+}
+.github-logo-footer i {
+    font-size: 16px;
+    color: #fff;
+    z-index: 2;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+.githhub-info > p {
+    font-size: 12px;
+    color: #808080;
+}
