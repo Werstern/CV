@@ -193,10 +193,13 @@ section.education-info{
     font-family: 'Roboto Condensed', sans-serif;
 }
 .antonov:before {
-    content:'Present 09. 2015';
+    content:'04. 2018 09. 2015';
 }
 .independent:before {
     content:'Present 07. 2016';
+}
+.softpro:before {
+    content:'Present 04. 2018';
 }
 .employment_place__title {
     color: #C7C7C7;
@@ -364,7 +367,7 @@ ul.activity-description li + li {
     color: #fff;
     font-weight: bold;
     position: absolute;
-    top: 460px;
+    top: 510px;
     left: -17px;
     text-transform: uppercase;
 }
